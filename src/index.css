@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    @font-face {
+        font-family: 'RedHatText-Bold';
+        src: url(/assets/fonts/static/RedHatText-Bold.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: 'RedHatText-Regular';
+        src: url(/assets/fonts/static/RedHatText-Regular.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: 'RedHatText-SemiBold';
+        src: url(/assets/fonts/static/RedHatText-SemiBold.ttf) format(truetype);
+    }
+}
+
+@layer utilities{
+    .cartBtn{
+        @apply !block p-[2px] rounded-full border text-[10px] hover:bg-rose-100 hover:text-redC
+    }
+}
